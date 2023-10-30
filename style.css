@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+html,body{
+
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: #E50914;
+    --var-height:100vh;
+}
+
+.backgrounddiv{
+    width:100%;
+    height:var(--var-height);
+    position: absolute;
+    z-index: 1;
+    background-color: #000000;
+    opacity: .6;
+}
+.backgroundlogo{
+    position: absolute;
+    width: 100%; 
+    height:var(--var-height); 
+    
+}
+.wrapper{
+    background-color: #232323;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    
+}
+.nav{
+    display: flex;  
+    margin: 0 10rem;
+    padding:1rem 0;
+    min-width: 77vw;
+    justify-content: space-between;
+    z-index: 9;
+}
+
+svg{
+    width:49%;
+    padding-top: 20px;
+    z-index: 8;
+    position: relative;
+    
+}
+
+.heroSection
+{
+    margin-top: 0;
+    min-height: var(--var-height);
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.button
+{
+    background-color: var(--red);
+    outline: none;
+    padding: .2rem 1rem;
+    margin: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 14px;
+    
+    
+}
+.button:hover{
+    background-color: #c4151e;
+}
+.button2{
+    font-size:15px;
+}
+
+.box{
+    
+    min-width:fit-content;
+    height:100%;
+}
+
+.heading{
+    font-weight: 900;
+    font-size:50px;
+    
+}
+.nav2{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 10px;
+    position: relative;
+}
+.button i 
+{
+    transform: translateY(2px);
+}
+
+.content-center{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width:100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+select
+{
+    position: relative;
+    top:0;
+    left:0;
+    border-radius: 5px;
+    padding: .5rem 2rem .5rem 2rem ;
+    margin: 10px 20px;
+    color: white;
+    background-color: transparent;
+    transform: translate(13px , -2px);
+    background-color: #000000b7;
+    appearance: none;
+    font-size: 15px;
+    
+    
+}
+select:focus-within
+{
+    border: 2px solid transparent;
+    outline: 2px solid white;
+}
+option{
+    background-color: white;
+}
+
+
+.icon-bg{
+   
+    position: absolute;
+    
+    top:1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2.5rem;
+    
+    z-index: 9;
+}
+.getStarted
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 80%;
+    max-width: 100%;
+    z-index: 7;
+    transform: translateY(2rem);
+    
+}
+.SubHead{
+    font-size: 25px;
+    padding: 20px 20px 20px 0px;
+  }
+
+.text-Signup{
+    width:100%;
+    height: 100%;
+}
+  .text-3
+{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 21px;
+}
+.input {
+    background-color: rgba(36, 34, 34, 0.74);
+    border-radius: 5px;
+    margin: 1rem 0rem;
+    outline: none;
+    box-sizing: border-box;
+    color:white;
+    flex-grow: 1;
+    max-width:80%;
+    position: relative;
+    transition: all ease-in;
+   
+}
+.button2{
+    margin: 1rem 0rem;
+
+}
+  
+.EmailField{
+    background-color: transparent;
+    padding: 1rem;
+    width:100%;
+    height: 100%;
+    appearance: none;
+    color: white;
+    outline: none;
+    border: 1px solid #babababd;;
+    border-radius: 5px;
+    
+}
+.button2{
+    
+    font-size: 1.5rem;
+    padding: .8rem 1.5rem;
+}
+
+.Signup
+{
+    margin :0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:5px;
+    position: relative;
+    justify-content: center;
+    -moz-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    max-width: 38rem;
+    flex-basis: 1;
+    
+}
+.Placeholder{
+    position: absolute;
+    padding: 0;
+    top:1.3rem;
+    left:1rem;
+    font-size: 18px;
+    font-weight:normal;
+    transition: 0.3s;
+    pointer-events: none;
+    color: #babababd;
+    
+    
+}
+.EmailField:focus + .Placeholder
+{
+    
+    top: .2rem;
+    left: 0rem;
+    transform: scale(.7);
+    
+    
+}
+
+.input:focus-within
+{
+    border: 2px solid transparent;
+    outline: 2px solid white;
+    outline-style: outset;
+    
+}
+input{
+    font-size: medium;
+    font-weight: 400;
+}
+section{
+   
+    background-color: #000000;
+    width: 100%;
+}
+.sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 4rem 3.5rem;
+    min-height: 75vh;
+    gap:10px;
+    margin:10px auto;
+}
+.section-3{
+    flex-wrap: wrap-reverse;
+
+}
+.ContentRight
+{
+    width: 500px;
+}
+.ContentLeft{
+    width:500px
+}
+img{
+    object-fit: cover;
+    width: 100%;
+}
+.TV{
+    position: relative;
+    z-index: 9;
+}
+.background-video
+{
+    position: absolute;
+    z-index: -1;
+
+}
+.video1
+{
+    max-width: 90%;
+    padding: 4.4rem 0rem 3rem 4rem;
+    top:0;
+    left:0;
+}
+.video2{
+    top:0;
+    left:0;
+    transform: scale(.70) translate(2rem,-.5rem );
+    max-width: 90%;
+    
+}
+.leftParent{
+    position: relative;
+}
+.animatedDiv{
+    position: absolute;
+    border:2px solid #595959 ;
+    bottom:2rem;
+    left:6rem;
+    justify-content: space-around;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 6rem ;
+    width: 60%; 
+    padding: .5em;
+    box-sizing: border-box;
+    background-color: #000000;
+   
+}
+.text1{
+    font-weight: bolder;
+}
+.text-download{
+    color:#0071EB ;
+}
+.imgContainer{
+    height: 100%;
+}
+.imgContainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.Place-download{
+    background-image: url("./assets/download-icon.gif");
+    background-size: contain;
+    height: 2.5rem;
+    width:2.5rem;
+    background-repeat: no-repeat;
+    
+}
+ul{
+    list-style: none;
+}
+li{
+    padding-top: 1rem;
+    color: #bababae0;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.footer p,a, .Contact{
+    color: #bababae8;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 1rem;
+    
+}
+.footer{
+    min-height: 70vh;
+    padding: 4rem 10rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+.foot{
+    padding:2rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+    
+    
+}
+
+.faq{
+    flex-direction: column;
+    align-items: stretch;
+    cursor: pointer;
+    
+}
+.faq .heading{
+    padding-bottom: 10px;
+}
+.faq .getStarted{
+    padding-top: 20px;
+}
+.faqblock{
+    
+    min-height: fit-content;
+    font-size: 25px;
+    font-weight: medium;
+    display: block;
+    width:80%;
+    margin: 0 auto;
+    
+}
+.Answer, .Questions
+{
+    background-color: #2D2D2D;
+    padding: 1.8rem;
+    
+}
+.Questions{
+    display: flex;
+    justify-content: space-between;
+    min-height: fit-content;
+    box-sizing: border-box;
+    border-bottom: solid 1px #000000;
+    user-select: none;
+}
+.hidden{
+    display: none;
+}
+.plus{
+   width:100%;
+   height: 1em;
+   width: 1em;
+   transition: transform ease-in;
+}
+.Questions:hover{
+    background-color: #4E4E4E;
+}
+.selector-icon{
+    position: absolute;
+    left:120px;
+    top:20px;
+}
+.h-center{
+    text-align: center;
+}
+.signup-2{
+    margin-top: 1.5rem;
+    align-self: center;
+}
+
+
+@media (width<976px) {
+    svg{
+        width: 9.5rem;
+        height: 2.7rem;
+    }
+
+    .heading{
+        font-size: 32px;
+    }
+
+    .SubHead,.text-3{
+        font-size: 18px;
+    }
+    .faqblock{
+        font-size: 18px;
+        width:100%;
+        margin: 0 ;
+        padding: 0;
+    }
+    .Questions{
+        padding: 24px;
+    }
+    .nav{
+        margin: 0 ;
+    }
+    select{
+        width:0;
+        padding: .5rem 2rem .5rem 1.5rem ;
+    }
+    .drop-icon{
+        transform: translate(-3.5rem,0rem);
+    }
+    .Place-download{
+        align-self: stretch;
+        background-size: cover;
+    }
+    
+    .text1{
+        font-size: 14px;
+    }
+    .text-download{
+        font-size: 12px;
+    }
+    
+    :root{
+        --var-height:85vh;
+    }
+}
+@media (width<586px) {
+    :root{
+        --var-height:100vh;
+    }
+    .video1{
+        padding: 2rem 0rem 0rem 2rem ;
+    }
+
+    .animatedDiv{
+        font-size: 16px;
+        margin:0;
+        height:4rem;
+        padding: .2rem;
+        width: 70vw;
+        left:0;
+        bottom:0;
+       
+    }
+    .video2{
+        transform: translate(.9rem,0) scale(.7);
+    }
+   .footer{
+    padding: 3rem;
+   }
+   
+}                   
